@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>DataTable</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="row col-md-12">
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+      <thead>
+        <tr>
+          <th  width="10px;">No.</th>
+          <th >Aset</th>
+          <th >Tanggal Lelang (waktu setempat)</th>
+          <th >Tempat Pelaksanaan Lelang</th>
+          <th >KPKNL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >1.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/4MJ9D/bangunan/ruko/Ruko25Lantai.html">Ruko 2,5 Lantai</a></td>
+          <td >31 Agustus 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >2.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/4R15K/bangunan/ruko/Ruko25Lantai.html">Ruko 2,5 Lantai</a></td>
+          <td >31 Agustus 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >3.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/FWTX4/bangunan/ruko/Ruko25Lantai.html">Ruko 2,5 Lantai</a></td>
+          <td >31 Agustus 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >4.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/H15ON/bangunan/gudang/GudangdiJalanBypassKrian.html">Gudang di Jalan Bypass Krian</a></td>
+          <td >31 Agustus 2020 10:00</td>
+          <td >KPKNL Sidoarjo</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/45/Sidoarjo.html">Sidoarjo</a></td>
+        </tr>
+        <tr>
+          <td >5.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/OU5W1/bangunan/rumah/tanahdanbangunan.html">tanah dan bangunan</a></td>
+          <td >31 Agustus 2020 11:00</td>
+          <td >KPKNL Surabaya</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/44/Surabaya.html">Surabaya</a></td>
+        </tr>
+        <tr>
+          <td >6.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/94TMI/bangunan/ruko/RumahTokoCocokUntukBisnis.html">Rumah Toko Cocok Untuk Bisnis</a></td>
+          <td >01 September 2020 09:00</td>
+          <td >Kantor Pelayanan Kekayaan Negara dan Lelang (KPKNL) Mataram</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/62/Mataram.html">Mataram</a></td>
+        </tr>
+        <tr>
+          <td >7.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/E9ABL/bangunan/rumah/RumahTinggalStrategisdiPusatKota.html">Rumah Tinggal Strategis di Pusat Kota</a></td>
+          <td >01 September 2020 09:00</td>
+          <td >Kantor Pelayanan Kekayaan Negara dan Lelang (KPKNL) Mataram</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/62/Mataram.html">Mataram</a></td>
+        </tr>
+        <tr>
+          <td >8.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2WB6S/bangunan/rumah/RumahSammuelWijayaLustika.html">Rumah Sammuel Wijaya Lustika</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL Cirebon, Jalan Dr. Wahidin Sudirohusodo No. 48 Kota Cirebon</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >9.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/DHABX/bangunan/rumah/SUNARTO.html">SUNARTO</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL TEGAL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >10.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/G2LNJ/bangunan/rumah/RumahTinggalInuDanubaya.html">Rumah Tinggal Inu Danubaya</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL Cirebon, Jalan Dr. Wahidin Sudirohusodo No. 48 Kota Cirebon</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >11.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/QPZYB/bangunan/rumah/RumahSriRohanengsih.html">Rumah Sri Rohanengsih</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL Cirebon, Jalan Dr. Wahidin Sudirohusodo No. 48 Kota Cirebon</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >12.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RZOK5/bangunan/ruko/AGUSSETIAWAN.html">AGUS SETIAWAN</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL TEGAL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >13.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/S971F/bangunan/rumah/RumahTinggalMYunus.html">Rumah Tinggal M Yunus</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL Cirebon, Jalan Dr. Wahidin Sudirohusodo No. 48 Kota Cirebon</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >14.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/UH9NO/bangunan/ruko/AGUSSETIAWAN.html">AGUS SETIAWAN</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL TEGAL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >15.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/WFGNB/bangunan/rumah/HNASIR.html">H.NASIR</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL TEGAL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >16.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/XN749/bangunan/rumah/RumahSriRohanengsihIndramayu.html">Rumah Sri Rohanengsih Indramayu</a></td>
+          <td >01 September 2020 10:00</td>
+          <td >KPKNL Cirebon, Jalan Dr. Wahidin Sudirohusodo No. 48 Kota Cirebon</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >17.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/8NCZL/bangunan/toko/KiosdiDepanRSFatmawati.html">Kios di Depan RS Fatmawati</a></td>
+          <td >01 September 2020 11:00</td>
+          <td >Jl. Prajurit KKO Usman dan Harun No.10 Jakarta Pusat</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/27/JakartaII.html">Jakarta II</a></td>
+        </tr>
+        <tr>
+          <td >18.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/OEKBZ/bangunan/toko/AlfamartTiparCakung.html">Alfamart Tipar Cakung</a></td>
+          <td >01 September 2020 11:00</td>
+          <td >Jl. Prajurit KKO Usman dan Harun No.10 Jakarta Pusat</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/27/JakartaII.html">Jakarta II</a></td>
+        </tr>
+        <tr>
+          <td >19.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/1HM6O/bangunan/rumah/HiBasir221.html">Hi. Basir 221</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >20.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2M9N5/tanah/TanahDarat/TanahAhmadMuhammad.html">Tanah Ahmad Muhammad</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >21.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/4G3TZ/bangunan/rumah/RumahIsmail.html">Rumah Ismail</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >22.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/8CYV3/bangunan/rumah/RumahErmanaZaina.html">Rumah Ermana Zaina</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >23.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/CMXOU/bangunan/rumah/RumahSerlyPadang.html">Rumah Serly Padang</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >24.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/DYI6R/tanah/TanahDarat/TanahSHManRahmanBadu.html">Tanah (SHM a.n Rahman Badu)</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >25.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/GJ9LT/bangunan/ruko/TOKODIDAERAHBANJARPANDEGLANG.html">TOKO DI DAERAH BANJAR PANDEGLANG</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Kanca Pandeglang Jl. Bhayangkara No.1 Pandeglang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/2/Serang.html">Serang</a></td>
+        </tr>
+        <tr>
+          <td >26.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/IGVY1/bangunan/rumah/RUMAHTINGGALDIKADUHEJOKABPANDEGLANG.html">RUMAH TINGGAL DI KADUHEJO KAB. PANDEGLANG</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Kanca Pandeglang Jl. Bhayangkara No.1 Pandeglang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/2/Serang.html">Serang</a></td>
+        </tr>
+        <tr>
+          <td >27.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JD3VK/bangunan/rumah/HiBasir371.html">Hi. Basir 371 </a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >28.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JTZYW/bangunan/rumah/RumahIrwanYusuf.html">Rumah Irwan Yusuf</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >29.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JW1P2/bangunan/rumah/RumahRatnaHamzah.html">Rumah Ratna Hamzah</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >30.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/LKYOV/bangunan/rumah/RUMAHTINGGALDIPASIREURIHPANDEGLANG.html">RUMAH TINGGAL DI PASIR EURIH PANDEGLANG</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Kanca Pandeglang Jl. Bhayangkara No.1 Pandeglang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/2/Serang.html">Serang</a></td>
+        </tr>
+        <tr>
+          <td >31.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/NLQOS/bangunan/rumah/RumahTinggaldiPondokChandra.html">Rumah Tinggal di Pondok Chandra</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >KPKNL Sidoarjo</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/45/Sidoarjo.html">Sidoarjo</a></td>
+        </tr>
+        <tr>
+          <td >32.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/PU5K2/tanah/TanahDarat/TanahKavlingdiPerumGrahaTirtaSidoarjo.html">Tanah Kavling di Perum Graha Tirta Sidoarjo</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >KPKNL Sidoarjo</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/45/Sidoarjo.html">Sidoarjo</a></td>
+        </tr>
+        <tr>
+          <td >33.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/STY57/tanah/TanahDarat/TanahAndiHaswati.html">Tanah Andi Haswati</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >34.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/X2WDU/bangunan/rumah/RumahSalemBuamona.html">Rumah Salem Buamona</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >35.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/ZBF2K/bangunan/gudang/GudangSerlyPadang.html">Gudang Serly Padang</a></td>
+          <td >02 September 2020 10:00</td>
+          <td >BRI Ternate</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/71/Ternate.html">Ternate</a></td>
+        </tr>
+        <tr>
+          <td >36.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/NTEOA/bangunan/toko/TokoBECAlimPamugi.html">Toko BEC Alim Pamugi</a></td>
+          <td >02 September 2020 14:00</td>
+          <td >KPKNL Bandung, Gedung Keuangan Negara, Gedung N, Jl. Asia Afrika No. 114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >37.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/YU62V/bangunan/rumah/RumahTinggalAlimPamugi.html">Rumah Tinggal Alim Pamugi</a></td>
+          <td >02 September 2020 14:00</td>
+          <td >KPKNL Bandung, Gedung Keuangan Negara, Gedung N, Jl. Asia Afrika No. 114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >38.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2JHLI/bangunan/rumah/RumahtinggaldekatdenganKotaSukoharjo.html">Rumah tinggal dekat dengan Kota Sukoharjo</a></td>
+          <td >03 September 2020 09:00</td>
+          <td >KPKNL Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >39.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/TVU4Q/bangunan/rumah/RumahtinggaldiDaerahWonosariKlaten.html">Rumah tinggal di Daerah Wonosari Klaten</a></td>
+          <td >03 September 2020 09:00</td>
+          <td >KPKNL Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >40.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/7UJLN/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >04 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >41.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/GLA1B/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >04 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >42.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RPH42/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >04 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >43.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/WD1LJ/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >04 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >44.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/5XJQ1/bangunan/gudang/KASMUIDSUNTARI.html">KASMUID SUNTARI</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >45.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/B17SN/bangunan/ruko/FERYOKTOVIAGUNAWAN.html">FERY OKTOVIA GUNAWAN</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >46.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/DFWPA/bangunan/gudang/EDYSUTANTO.html">EDY SUTANTO</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >47.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/OVDSE/bangunan/rumah/DARSONOKUSYATI.html">DARSONO KUSYATI</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >48.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/PRG13/bangunan/gudang/NOVINAKARTIKA.html">NOVINA KARTIKA</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >49.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RFL4E/bangunan/gudang/MULYANIWARNI.html">MULYANI WARNI</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >50.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RKLYN/bangunan/rumah/KHOLISOH-ANGGIANGGRAINIPRIYONO.html">KHOLISOH - ANGGI ANGGRAINI PRIYONO</a></td>
+          <td >04 September 2020 09:00</td>
+          <td >bri kanca brebes</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/41/Tegal.html">Tegal</a></td>
+        </tr>
+        <tr>
+          <td >51.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/UG81E/bangunan/rumah/RumahTinggaldiPerumDeltasari.html">Rumah Tinggal di Perum Deltasari</a></td>
+          <td >04 September 2020 10:00</td>
+          <td >KPKNL Sidoarjo</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/45/Sidoarjo.html">Sidoarjo</a></td>
+        </tr>
+        <tr>
+          <td >52.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/GRS7Y/bangunan/ruko/TANAHDANBANGUNANSHMNO3323ANLILISSETYOWATI.html">TANAH DAN BANGUNAN SHM NO 3323 AN LILIS SETYOWATI</a></td>
+          <td >04 September 2020 11:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >53.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/PSL8M/tanah/sawah/TANAHSAWAHSHMNOM2119ANAGUSDARUPARWANTO.html">TANAH SAWAH SHM NOM 2119 AN AGUS DARU PARWANTO</a></td>
+          <td >04 September 2020 11:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >54.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/MZSI8/bangunan/rumah/AgunanTanahdanBangunanRumah.html">Agunan Tanah dan Bangunan Rumah</a></td>
+          <td >05 September 2020 11:00</td>
+          <td >Samarinda</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/55/Samarinda.html">Samarinda</a></td>
+        </tr>
+        <tr>
+          <td >55.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2Z6LW/bangunan/toko/JUALTOKODANRUMAHTINGGALDAERAHBANDUNG.html">JUAL TOKO DAN RUMAH TINGGAL DAERAH BANDUNG</a></td>
+          <td >08 September 2020 09:00</td>
+          <td >KPKNL Bandung Gedung N Jl. Asia Afrika no. 114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >56.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/3FHUJ/tanah/sawah/SHMNO133CECEAYIPROSIDI.html">SHM NO.133/CECE AYIP ROSIDI</a></td>
+          <td >08 September 2020 10:00</td>
+          <td >CIREBON</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >57.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/5URO7/bangunan/rumah/SHMNO182AJUN.html">SHM NO.182/AJUN</a></td>
+          <td >08 September 2020 10:00</td>
+          <td >CIREBON</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >58.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/6EAX8/bangunan/rumah/SHMNO214TETINURHAYATI.html">SHM NO.214/TETI NURHAYATI</a></td>
+          <td >08 September 2020 10:00</td>
+          <td >CIREBON</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >59.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/9BUR5/tanah/sawah/SHMNO228AJUN.html">SHM NO.228/AJUN</a></td>
+          <td >08 September 2020 10:00</td>
+          <td >CIREBON</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >60.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/DXAOJ/bangunan/rumah/SHMNO7CECEAYIPROSIDI.html">SHM NO.7/CECE AYIP ROSIDI</a></td>
+          <td >08 September 2020 10:00</td>
+          <td >CIREBON</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/37/Cirebon.html">Cirebon</a></td>
+        </tr>
+        <tr>
+          <td >61.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/1M8CN/bangunan/rumah/SHMNo515anTolip.html">SHM No 515 an Tolip</a></td>
+          <td >08 September 2020 11:00</td>
+          <td >BRI Kantor Cabang Sibolga</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/11/PadangSidempuan.html">Padang Sidempuan</a></td>
+        </tr>
+        <tr>
+          <td >62.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/E7IHK/bangunan/rumah/SHMNo338anHariantoNajara.html">SHM No 338 a.n. Harianto Najara</a></td>
+          <td >08 September 2020 11:00</td>
+          <td >BRI Kantor Cabang Sibolga</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/11/PadangSidempuan.html">Padang Sidempuan</a></td>
+        </tr>
+        <tr>
+          <td >63.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/L1AP9/bangunan/rumah/SHMNo1553anEfrianto.html">SHM No 1553 an Efrianto</a></td>
+          <td >08 September 2020 11:00</td>
+          <td >BRI Kantor Cabang Sibolga</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/11/PadangSidempuan.html">Padang Sidempuan</a></td>
+        </tr>
+        <tr>
+          <td >64.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/O4AG1/bangunan/rumah/SHMNo84anHermanMarbun.html">SHM No 84 an Herman Marbun</a></td>
+          <td >08 September 2020 11:00</td>
+          <td >BRI Kantor Cabang Sibolga</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/11/PadangSidempuan.html">Padang Sidempuan</a></td>
+        </tr>
+        <tr>
+          <td >65.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/EGWJV/bangunan/gudang/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >08 September 2020 13:00</td>
+          <td >JL Siliwangi No.09 Purwakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/35/Purwakarta.html">Purwakarta</a></td>
+        </tr>
+        <tr>
+          <td >66.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/1BNFQ/bangunan/rumah/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 09:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >67.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/DNUZT/bangunan/toko/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 09:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >68.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/U52YN/bangunan/kos/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 09:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >69.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/X2IJN/bangunan/rumah/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 09:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >70.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/1RAWH/bangunan/gudang/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 10:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >71.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/AUICL/bangunan/rumah/RumahTinggal.html">Rumah Tinggal</a></td>
+          <td >09 September 2020 10:00</td>
+          <td >Ruang lelang KPKNL Makassar Jalan Urip sumoharjo KM.4 GKN I lantai 2 Makassar</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/64/Makassar.html">Makassar</a></td>
+        </tr>
+        <tr>
+          <td >72.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/BQW1D/bangunan/ruko/rukodiunitIIwortel.html">ruko di unit II wortel </a></td>
+          <td >09 September 2020 10:00</td>
+          <td >sorong</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/73/Sorong.html">Sorong</a></td>
+        </tr>
+        <tr>
+          <td >73.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/F4QOR/bangunan/rumah/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 10:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >74.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/ZBTLC/bangunan/rumah/TanahBangunan.html">Tanah&amp;Bangunan</a></td>
+          <td >09 September 2020 10:00</td>
+          <td >JL Asia Afrika No.114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >75.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/25YMT/bangunan/rumah/SHMNo00566tgl15112010.html">SHM No. 00566 tgl. 15.11.2010 </a></td>
+          <td >09 September 2020 11:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/22/Bengkulu.html">Bengkulu</a></td>
+        </tr>
+        <tr>
+          <td >76.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/3SC9F/bangunan/rumah/SHMNo394tgl05081999.html">SHM No. 394 tgl 05.08.1999</a></td>
+          <td >09 September 2020 11:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/22/Bengkulu.html">Bengkulu</a></td>
+        </tr>
+        <tr>
+          <td >77.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/47EU2/bangunan/rumah/SHMNo692tgl29091997.html">SHM No. 692 tgl 29.09.1997</a></td>
+          <td >09 September 2020 11:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/22/Bengkulu.html">Bengkulu</a></td>
+        </tr>
+        <tr>
+          <td >78.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/WFQZ1/bangunan/rumah/RumahTinngalDiahDinar.html">Rumah Tinngal Diah Dinar</a></td>
+          <td >09 September 2020 11:00</td>
+          <td >KPKNL Bandung, Gedung Keuangan Negara, Gedung N, Jl. Asia Afrika No. 114 Bandung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/31/Bandung.html">Bandung</a></td>
+        </tr>
+        <tr>
+          <td >79.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/8XF29/bangunan/toko/SHMNo02950.html">SHM No. 02950</a></td>
+          <td >09 September 2020 13:00</td>
+          <td >Kantor PT. BRI (Persero), Tbk Cabang Kayu Agung Jalan Letnan Marzuki Jahri I/45 Kayu Agung</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/17/Palembang.html">Palembang</a></td>
+        </tr>
+        <tr>
+          <td >80.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/39UW6/bangunan/rumah/RUMAH.html">RUMAH</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >81.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/3TRZN/bangunan/rumah/RUMAH.html">RUMAH</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >82.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/97PFA/tanah/TanahDarat/KEBUNKARET.html">KEBUN KARET</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >83.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/DKR6G/tanah/TanahDarat/KEBUNKARET.html">KEBUN KARET</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >84.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/IJKEN/bangunan/kos/RUMAHBEDENG.html">RUMAH BEDENG</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >85.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/IVNMQ/bangunan/ruko/RUKO.html">RUKO</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >86.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/KJ7VF/tanah/TanahDarat/KEBUNKARET.html">KEBUN KARET</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >87.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/L1YNE/bangunan/ruko/RUKO.html">RUKO</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >88.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/T92DX/tanah/TanahDarat/KEBUNKARET.html">KEBUN KARET</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >89.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/XIVN9/tanah/TanahDarat/KEBUNKARET.html">KEBUN KARET</a></td>
+          <td >10 September 2020 09:00</td>
+          <td >KPKNL JAMBI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >90.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/9KSGI/bangunan/rumah/RUMAH.html">RUMAH</a></td>
+          <td >10 September 2020 10:00</td>
+          <td >KPKNL SURABAYA, JL. INDRAPURA NO.5, SURABAYA</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/44/Surabaya.html">Surabaya</a></td>
+        </tr>
+        <tr>
+          <td >91.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/AV7KE/bangunan/ruko/RUMAHTOKO.html">RUMAH TOKO</a></td>
+          <td >10 September 2020 10:00</td>
+          <td >KANTOR CABANG BRI SUMENEP</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/49/Pamekasan.html">Pamekasan</a></td>
+        </tr>
+        <tr>
+          <td >92.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/C1DX5/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >10 September 2020 10:00</td>
+          <td >KANTOR CABANG BRI SUMENEP</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/49/Pamekasan.html">Pamekasan</a></td>
+        </tr>
+        <tr>
+          <td >93.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/MJ4TB/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >10 September 2020 10:00</td>
+          <td >KANTOR CABANG BRI SUMENEP</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/49/Pamekasan.html">Pamekasan</a></td>
+        </tr>
+        <tr>
+          <td >94.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/UYVEZ/tanah/TanahDarat/TANAHKOSONG.html">TANAH KOSONG</a></td>
+          <td >10 September 2020 10:00</td>
+          <td >KANTOR CABANG BRI SUMENEP</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/49/Pamekasan.html">Pamekasan</a></td>
+        </tr>
+        <tr>
+          <td >95.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/3TOKW/bangunan/rumah/TanahdanBangunanRumahJlUjungPandangGgHRadjali.html">Tanah dan Bangunan Rumah Jl. Ujung Pandang, Gg. H. Radjali</a></td>
+          <td >10 September 2020 14:00</td>
+          <td >KPKNL Pontianak, Jl. Letjen Sutoyo No.19 Pontianak</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >96.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/5HN8Y/bangunan/rumah/TanahdanBangunanRumahJlDanauSentarumKompMitraRayaLestariIVNoB-3.html">Tanah dan Bangunan Rumah Jl. Danau Sentarum, Komp. Mitra Raya
+              Lestari IV No.B-3</a></td>
+          <td >10 September 2020 14:00</td>
+          <td >KPKNL Pontianak, Jl. Letjen Sutoyo No.19 Pontianak</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >97.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/M7IC5/bangunan/rumah/TanahdanBangunanRumahJlPembangunanKompDalysaPermaiNoD7.html">Tanah dan Bangunan Rumah Jl.Pembangunan, Komp. Dalysa Permai No.D7</a></td>
+          <td >10 September 2020 14:00</td>
+          <td >KPKNL Pontianak, Jl. Letjen Sutoyo No.19 Pontianak</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >98.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/59NFX/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >11 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >99.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/HJBCY/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >11 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >100.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JNT6O/tanah/TanahDarat/TANAHKOSONG.html">TANAH KOSONG</a></td>
+          <td >11 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >101.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/OAI2S/tanah/TanahDarat/TANAHKOSONG.html">TANAH KOSONG</a></td>
+          <td >11 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >102.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RIUPD/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >11 September 2020 07:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >103.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JG8PV/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >11 September 2020 08:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >104.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/X4TPE/bangunan/ruko/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >11 September 2020 08:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >105.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/XA32G/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >11 September 2020 08:00</td>
+          <td >BRI GAJAH MADA PONTIANAK</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >106.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/S2QWI/bangunan/ruko/RukoAremanAksesUIKelapaDua.html">Ruko Areman Akses UI Kelapa Dua</a></td>
+          <td >11 September 2020 10:00</td>
+          <td >KPKNL Bogor</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/34/Bogor.html">Bogor</a></td>
+        </tr>
+        <tr>
+          <td >107.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/VBS51/bangunan/rumah/RumahTinggaldiProbolinggo.html">Rumah Tinggal di Probolinggo</a></td>
+          <td >11 September 2020 10:00</td>
+          <td >KPKNL Jember</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/47/Jember.html">Jember</a></td>
+        </tr>
+        <tr>
+          <td >108.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/58P9M/bangunan/ruko/RUKODICEPOGO.html">RUKO DI CEPOGO </a></td>
+          <td >12 September 2020 10:00</td>
+          <td >KPKNL SURAKARTA</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >109.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2I85S/bangunan/ruko/RukoAremanAksesUIKelapaDua.html">Ruko Areman Akses UI Kelapa Dua</a></td>
+          <td >16 September 2020 10:00</td>
+          <td >KPKNL Bogor</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/34/Bogor.html">Bogor</a></td>
+        </tr>
+        <tr>
+          <td >110.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/A57E6/bangunan/rumah/RumahTinggaldiSedati.html">Rumah Tinggal di Sedati</a></td>
+          <td >16 September 2020 10:00</td>
+          <td >KPKNL Sidoarjo</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/45/Sidoarjo.html">Sidoarjo</a></td>
+        </tr>
+        <tr>
+          <td >111.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/I4NMQ/bangunan/rumah/RumahdiSukodono.html">Rumah di Sukodono</a></td>
+          <td >16 September 2020 10:00</td>
+          <td >KPKNL Sidoarjo</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/45/Sidoarjo.html">Sidoarjo</a></td>
+        </tr>
+        <tr>
+          <td >112.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/YTOEA/bangunan/gudang/GudangSemiPermanen-KampungLaut.html">Gudang Semi Permanen - Kampung Laut</a></td>
+          <td >16 September 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/18/Jambi.html">Jambi</a></td>
+        </tr>
+        <tr>
+          <td >113.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/D94PR/bangunan/rumah/TanahdanBangunanRumahGgGenerasiIKelSiantanHulu.html">Tanah dan Bangunan Rumah Gg. Generasi I Kel. Siantan Hulu</a></td>
+          <td >16 September 2020 11:00</td>
+          <td >KPKNL Pontianak, Jl. Letjen Sutoyo No.19 Pontianak</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >114.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/PERX6/bangunan/ruko/TanahdanBangunanRukoJlYaMSabranKelTanjungHulu.html">Tanah dan Bangunan Ruko Jl. Ya'M Sabran Kel. Tanjung Hulu</a></td>
+          <td >16 September 2020 11:00</td>
+          <td >KPKNL Pontianak, Jl. Letjen Sutoyo No.19 Pontianak</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >115.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/3DWZF/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >16 September 2020 14:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >116.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/6HQIZ/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >16 September 2020 14:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >117.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/G6ECA/bangunan/rumah/KIOS.html">KIOS </a></td>
+          <td >16 September 2020 14:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >118.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/GJ4WX/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >16 September 2020 14:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >119.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/KHWU1/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >16 September 2020 14:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >120.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/47DUI/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >17 September 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >121.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/5ORD7/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >17 September 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >122.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/FQG2E/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >17 September 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >123.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/HNORS/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >17 September 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >124.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/UNLOF/bangunan/rumah/RUMAHTINGGAL.html">RUMAH TINGGAL</a></td>
+          <td >17 September 2020 10:00</td>
+          <td >KPKNL</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/50/Pontianak.html">Pontianak</a></td>
+        </tr>
+        <tr>
+          <td >125.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2DLT9/bangunan/gudang/KANDANGDANGUDANGDENGANTANAHLUASDIBENDOSARISANANKULON.html">KANDANG DAN GUDANG DENGAN TANAH LUAS DI BENDOSARI SANANKULON</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >126.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/6BHSL/bangunan/rumah/RUMAHDEKATJALANKENARIPLOSOKEREPSANANWETAN.html">RUMAH DEKAT JALAN KENARI PLOSOKEREP SANANWETAN</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >127.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/7BZHO/tanah/TanahDarat/TANAHLUASDIKARANGSONOKANIGORO.html">TANAH LUAS DI KARANGSONO KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >128.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/8RK3V/bangunan/rumah/TANAHDANRUMAHDIPOPOHSELOPURO.html">TANAH DAN RUMAH DI POPOH SELOPURO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >129.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/8TBK7/bangunan/rumah/RUMAHSTRATEGISDIBENDOSARISANANKULON.html">RUMAH STRATEGIS DI BENDOSARI SANANKULON</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >130.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/9AUL2/bangunan/rumah/TANAHDANRUMAHPINGGIRJALANRAYASATRIYANKANIGORO.html">TANAH DAN RUMAH PINGGIR JALAN RAYA SATRIYAN KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >131.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/C49WF/tanah/sawah/TANAHLUASDIKARANGSONOKANIGORO.html">TANAH LUAS DI KARANGSONO KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >132.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/CF4DU/tanah/TanahDarat/TANAHLUASDISAWENTARKANIGORO.html">TANAH LUAS DI SAWENTAR KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >133.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/CU2YN/tanah/TanahDarat/TANAHLUASDIBENDOSARISANANKULON.html">TANAH LUAS DI BENDOSARI SANANKULON</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >134.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/E5CGZ/tanah/sawah/TANAHLUASDANSTRATEGISDIBENDOSARISANANKULON.html">TANAH LUAS DAN STRATEGIS DI BENDOSARI SANANKULON</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >135.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/FXAL2/bangunan/rumah/RUMAHDENGANTANAHLUASDISELOKAJANGSRENGAT.html">RUMAH DENGAN TANAH LUAS DI SELOKAJANG SRENGAT</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >136.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/HMKBW/bangunan/gudang/TANAHDANGUDANGDIKARANGSONOKANIGORO.html">TANAH DAN GUDANG DI KARANGSONO KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >137.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/I2G51/bangunan/rumah/RUMAHMEWAHTANAHLUASDIRINGINREJOKABUPATENKEDIRI.html">RUMAH MEWAH TANAH LUAS DI RINGINREJO KABUPATEN KEDIRI</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >138.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JT1RQ/bangunan/rumah/TANAHDANRUMAHDEKATKENARIPLOSOKEREPSANANWETAN.html">TANAH DAN RUMAH DEKAT KENARI PLOSOKEREP SANANWETAN</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >139.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/JTPKX/bangunan/rumah/RUMAHDENGANTANAHLUASDISELOKAJANGSRENGAT.html">RUMAH DENGAN TANAH LUAS DI SELOKAJANG SRENGAT</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >140.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/Q7NXU/tanah/sawah/TANAHSAWAHDIKARANGSONOKANIGORO.html">TANAH SAWAH DI KARANGSONO KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >141.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/SAIK7/tanah/sawah/TANAHLUASDIKARANGSONOKANIGORO.html">TANAH LUAS DI KARANGSONO KANIGORO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >142.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/Y92XC/tanah/TanahDarat/TANAHSTRATEGISDIRINGINREJOKABUPATENKEDIRI.html">TANAH STRATEGIS DI RINGINREJO KABUPATEN KEDIRI</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >143.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/YKIE5/tanah/TanahDarat/TANAHPINGGIRJALANDINGENIWONOTIRTO.html">TANAH PINGGIR JALAN DI NGENI WONOTIRTO</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >144.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/YODL6/bangunan/ruko/RUKOJALANKENARIPLOSOKEREPSANANWETAN.html">RUKO JALAN KENARI PLOSOKEREP SANANWETAN</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >145.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/ZVXWO/bangunan/rumah/RUMAHDENGANTANAHLUASDIBENDOSARISANANKULON.html">RUMAH DENGAN TANAH LUAS DI BENDOSARI SANANKULON</a></td>
+          <td >17 September 2020 11:00</td>
+          <td >KPKNL MALANG Jl S Supriyadi 157 Malang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/46/Malang.html">Malang</a></td>
+        </tr>
+        <tr>
+          <td >146.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/19NCJ/bangunan/rumah/TANAHDANBANGUNANSHMNO263ANSISWOSUHARJALIASPARJAN.html">TANAH DAN BANGUNAN SHM NO 263 AN SISWOSUHARJALIAS PARJAN</a></td>
+          <td >18 September 2020 10:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >147.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/1H9DI/bangunan/ruko/TANAHDANBANGUNANSHMNO1968ANSUYAMTO.html">TANAH DAN BANGUNAN SHM NO 1968 AN SUYAMTO</a></td>
+          <td >18 September 2020 10:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >148.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2JE13/bangunan/rumah/TANAHDANBANGUNANSHMNO345ANAGUSDWIHARINTOSPD.html">TANAH DAN BANGUNAN SHM NO 345 AN AGUS DWI HARINTO SPD</a></td>
+          <td >18 September 2020 10:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >149.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/IHVTM/bangunan/rumah/TANAHDANBANGUNANSHMNO1833ANTUANSUYAMTOPRATAMARAHMAN.html">TANAH DAN BANGUNAN SHM NO 1833 AN TUAN SUYAMTO PRATAMA RAHMAN</a></td>
+          <td >18 September 2020 10:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >150.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RLZCK/bangunan/pabrik/TANAHDANBANGUNANSHMNO654ANARISUTOTO.html">TANAH DAN BANGUNAN SHM NO 654 AN ARI SUTOTO</a></td>
+          <td >18 September 2020 10:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >151.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/RQ8TM/bangunan/rumah/TANAHDANBANGUNANSHMNO1111ANSUYAMTO.html">TANAH DAN BANGUNAN SHM NO 1111 AN. SUYAMTO</a></td>
+          <td >18 September 2020 10:00</td>
+          <td >KPKNL Surakarta,Jl Ki Mangun Sarkoro No 141 Surakarta</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >152.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/QV3LS/tanah/TanahDarat/SHMNo572.html">SHM No. 572</a></td>
+          <td >18 September 2020 14:00</td>
+          <td >Kantor Pelayanan Kekayaan Negara dan Lelang Palembang Jalan Kapten A. Rivai No. 4 Gedung Keuangan Negara Palembang</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/17/Palembang.html">Palembang</a></td>
+        </tr>
+        <tr>
+          <td >153.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/58Z16/bangunan/rumah/PTSAMCOINDONESIA.html">PT SAMCO INDONESIA</a></td>
+          <td >22 September 2020 11:00</td>
+          <td >KPKNL BEKASI</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/33/Bekasi.html">Bekasi</a></td>
+        </tr>
+        <tr>
+          <td >154.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/2T8BR/bangunan/ruko/RUKO.html">RUKO</a></td>
+          <td >23 September 2020 10:00</td>
+          <td >KPKNL SURAKARTA</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >155.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/4C5BG/bangunan/apartemen/ApartemenGrandKartiniSawahBesar.html">Apartemen Grand Kartini Sawah Besar</a></td>
+          <td >23 September 2020 10:00</td>
+          <td >KPKNL Jakarta II</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/27/JakartaII.html">Jakarta II</a></td>
+        </tr>
+        <tr>
+          <td >156.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/7N4T1/bangunan/ruko/RUKO.html">RUKO</a></td>
+          <td >23 September 2020 10:00</td>
+          <td >KPKNL SURAKARTA</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >157.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/379M6/bangunan/rumah/RUMAHDIDAERAHPANDEYANNGEMPLAK.html">RUMAH DI DAERAH PANDEYAN NGEMPLAK</a></td>
+          <td >26 September 2020 10:00</td>
+          <td >KPKNL SURAKARTA</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/39/Surakarta.html">Surakarta</a></td>
+        </tr>
+        <tr>
+          <td >158.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/H2PGC/bangunan/ruko/rumahtinggal.html">rumah tinggal</a></td>
+          <td >28 September 2020 10:00</td>
+          <td >KPKNL Bogor</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/34/Bogor.html">Bogor</a></td>
+        </tr>
+        <tr>
+          <td >159.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/O761F/bangunan/rumah/rumahtinggal.html">rumah tinggal</a></td>
+          <td >28 September 2020 10:00</td>
+          <td >kpknl tangerang i</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/24/Tangerang.html">Tangerang</a></td>
+        </tr>
+        <tr>
+          <td >160.</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_aset/WF1RY/bangunan/rumah/rumahtinggal.html">rumah tinggal</a></td>
+          <td >28 September 2020 10:00</td>
+          <td >KPKNL Bogor</td>
+          <td ><a href="https://infolelang.bri.co.id/lelang/detail_kpknl/34/Bogor.html">Bogor</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#example').DataTable();
+    });
+  </script>
+</body>
+
+</html>
