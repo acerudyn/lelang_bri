@@ -192,7 +192,7 @@ button.w3view-cart:focus{
 }
 .w3ls_logo_products_left h1 a{
 	font-size: 40px;
-    color: #013161;
+    color: #2f358c;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -936,7 +936,7 @@ a.w3_agile_vimeo:hover{
     color: #fff;
     display: block;
     width: 100%;
-    background:#3399cc;
+    background:#013161;
     margin: 1.5em 0 0;
 }
 .login-form-grids input[type="submit"]:hover{
@@ -1945,7 +1945,7 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 /*-- contact --*/
 .agile_map	iframe{
 	width:100%;
-	min-height:580px;
+	min-height:540px;
 }
 .w3_agileits_contact_grid_left{
 	padding:0;
@@ -2146,7 +2146,7 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 .w3_agileits_contact_grid_right input[type="submit"] {
     outline: none;
     width: 100%;
-    background: #212121;
+    background: #013161;
     color: #fff;
     padding: 0.8em 0;
     font-size: 1em;
